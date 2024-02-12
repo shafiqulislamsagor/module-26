@@ -29,7 +29,7 @@
                             <input id="height" class="w-16 text-lg p-2 rounded-sm" type="text" placeholder="h">
                             <span class="mr-4 ml-2 text-xl">cm</span>
                         </div>
-                        <div id="div">
+                        <div class="div">
                             <p class="text-2xl">Area: <span id="areaName"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions justify-end">
@@ -38,19 +38,22 @@
                     </div>
                 </div>
                 <div class="card w-[310px] bg-base-100 shadow-xl border border-gray-500">
-                    <figure class="p-4"><img src="images/triangle.png"
-                            alt="triangle" /></figure>
+                    <figure class="p-4"><img src="images/rectangle.png"
+                            alt="Rectangle" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="card-title justify-center">Triangle</h2>
-                        <p>Area = 1/2 × b × h</p>
+                        <h2 class="card-title justify-center">Rectangle</h2>
+                        <p>Area = w × l</p>
                         <div class="flex items-center">
-                            <input class="w-16 text-lg p-2 rounded-sm" type="text" placeholder="b">
+                            <input id="weidth" class="w-16 text-lg p-2 rounded-sm" type="text" placeholder="w">
                             <span class="mr-4 ml-2 text-xl">cm</span>
-                            <input class="w-16 text-lg p-2 rounded-sm" type="text" placeholder="h">
+                            <input id="length" class="w-16 text-lg p-2 rounded-sm" type="text" placeholder="l">
                             <span class="mr-4 ml-2 text-xl">cm</span>
                         </div>
+                        <div class="div">
+                            <p class="text-2xl">Area: <span id="rectangleArea"></span>cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button id="RectangleName" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -96,6 +99,7 @@
         </div>
     </main>
     <script src="script/triangle.js"></script>
+    <script src="script/regtangle.js"></script>
 </body>
 
 </html>

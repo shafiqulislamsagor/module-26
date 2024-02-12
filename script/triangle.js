@@ -8,11 +8,16 @@ function triangleArea(){
     const heightText = heightArea.value;
     const height = parseFloat(heightText);
     // console.log(height)
-    const area = (1/2) * base * height;
+    const areas = (1/2) * base * height;
     // console.log(area)
     const triangleAreaSpan = document.getElementById('areaName');
-    triangleAreaSpan.innerText = area;
+    triangleAreaSpan.innerText = areas;
 
     
 }
-document.getElementById('div').style.textAlign = 'left';
+
+const div = document.getElementsByClassName('div');
+
+for(let i of div){
+    i.style.textAlign = 'left';
+}
