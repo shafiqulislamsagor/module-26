@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recap js</title>
+</head>
+<body>
+    <h1>hi everyOne</h1>
+    <h2>How are you</h2>
+    <ul>
+        <li>list%=1</li>
+        <li id="he">list%=2</li>
+        <li>list%=3</li>
+        <li>list%=4</li>
+    </ul>
+    <script>
+        let li = document.createElement('li');
+        li.innerHTML = 'hlw world'
+        document.getElementById('he').nextSibling.nextSibling.appendChild(li)
+    </script>
+</body>
+</html>
